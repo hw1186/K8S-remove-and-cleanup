@@ -14,7 +14,7 @@ openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -pubin -outfor
    openssl dgst -sha256 -hex | sed 's/^.* //'
 ``` 
 ```bash 
-sudo kubeadm join MasterIP:6443 --token [Your Token] \
+sudo kubeadm join [Master IP]:6443 --token [Your Token] \
         --discovery-token-ca-cert-hash sha256:[Your hash] 
 ``` 
 
