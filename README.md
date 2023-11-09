@@ -4,7 +4,8 @@
 Setting File Permissions to 777  
 ```bash
 chmod 777 [FILENAME]
-in master node  
+in master node
+```
 ```bash 
 kubeadm token create 
 ```
